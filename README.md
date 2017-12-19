@@ -82,10 +82,12 @@ It took me a while to find it. Even though you provided a hint by using the word
 
 Alternatively, I considered creating a suffix tree data structure, where you map words in the following way
 
+```
 do ____ es
  \_____ ing
   \____ g ____ gy
          \____ house
+```
 
 But as you can see in my example above, this structure finds shared roots between words that are not related. From there I considered creating a list of known suffixes, and creating the tree where the nodes are only broken up by known suffixes. That's similar to one of the solutions in the wikipedia solution, but it's still pretty limited. 
 
